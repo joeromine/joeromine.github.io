@@ -7,6 +7,8 @@ hounds.innerHTML = years('06/1/2011');
 var gpa = document.getElementById('gpa');
 gpa.innerHTML = years('06/1/2015');
 
+var running = document.getElementById('running');
+running.innerHTML = years('1/1/2017');
 
 
 function months(start) {
