@@ -3,7 +3,6 @@
 }
 .page-padding{
     padding: 1rem;
-
 }
 
 .img-width{
@@ -14,15 +13,11 @@
 }
 header {
     height: 6rem;
-    
     background-color: orange;
     border-radius: 9rem;
     padding-left: 2.2rem;
     padding-right: 1rem;
     margin-bottom: 1rem;
-}
-.title{
-    font-size: large;
 }
 
 header ul {
@@ -35,7 +30,7 @@ header ul li {
 
 }
 header h2 {
-    padding-top: 1.1rem;
+    padding-top: 1.3rem;
 }
 header a {
 color: #36342c;
