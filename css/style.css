@@ -12,11 +12,12 @@
     border-radius: 9rem;
 }
 header {
-    height: 6rem;
+    height: 5%;
     background-color: orange;
     border-radius: 9rem;
     padding-left: 2.2rem;
     padding-right: 1rem;
+    padding-bottom: 1rem;
     margin-bottom: 1rem;
 }
 
