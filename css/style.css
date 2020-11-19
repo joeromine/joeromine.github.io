@@ -19,6 +19,7 @@ header {
     border-radius: 9rem;
     padding-left: 2.2rem;
     padding-right: 1rem;
+    margin-bottom: 1rem;
 }
 .title{
     font-size: large;
@@ -35,4 +36,19 @@ header ul li {
 }
 header h2 {
     padding-top: 1.1rem;
+}
+header a {
+color: #36342c;
+}
+header a:hover {
+    color: hotpink;
+    }
+.software:hover {
+    background-color: lightcoral;
+}
+.hounds:hover {
+    background-color:lightpink;
+}
+.running:hover {
+    background-color: lightskyblue;
 }
