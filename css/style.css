@@ -29,6 +29,7 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
+    background: #f1faee;
 	line-height: 1;
     height: 100%;
 }
@@ -69,7 +70,7 @@ table {
 }
 header {
     height: 5%;
-    background-color: orange;
+    background-color:#a8dadc;
     border-radius: 9rem;
     padding-left: 2.2rem;
     padding-right: 1rem;
@@ -94,17 +95,9 @@ header a {
 color: #36342c;
 }
 header a:hover {
-    color: hotpink;
+    color: #e63946;
     }
-.software:hover {
-    background-color: lightcoral;
-}
-.hounds:hover {
-    background-color:lightpink;
-}
-.running:hover {
-    background-color: lightskyblue;
-}
+
 
 main {
     font-size: 1.8em;
