@@ -32,6 +32,8 @@ body {
     background: #f1faee;
 	line-height: 1;
     height: 100%;
+    width: 50%;
+    margin: 0 25% 0 25%;
 }
 ol, ul {
 	list-style: none;
@@ -54,7 +56,12 @@ table {
     
 }
 
-
+.header-icon{
+    display: none;
+}
+.burger{
+    float: right;
+}
 .left-border{
     border-left: 2px solid black;
 }
@@ -70,32 +77,33 @@ table {
 }
 header {
     height: 5%;
-    background-color:#a8dadc;
+    background-color: #457b9d;
     border-radius: 9rem;
-    padding-left: 2.2rem;
-    padding-right: 1rem;
-    padding-bottom: 1rem;
-    margin-bottom: 1rem;
+    padding: .5rem 3rem .5rem 3rem;
+    margin-bottom: 3rem;
     font-size: 2em;
+    color: #f1faee;
+    font-family:  'Trebuchet MS', sans-serif;
 }
 
 header ul {
-    padding-top: .35rem;
+    padding: 1rem 1rem 1rem 1rem;
+    margin-left: auto;
 }
 
 header ul li {
     display: inline;
-    margin-left: .1rem;
+    margin-left: .5rem;
 
 }
 header h2 {
-    padding-top: 1.3rem;
+    padding: 2.3rem 2.3rem;
 }
 header a {
 color: #36342c;
 }
 header a:hover {
-    color: #e63946;
+    color: #f1faee;
     }
 
 

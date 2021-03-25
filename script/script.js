@@ -10,6 +10,15 @@ gpa.innerHTML = years('06/1/2015');
 var running = document.getElementById('running');
 running.innerHTML = years('1/1/2017');
 
+var burger = document.querySelector('.burger');
+burger.addEventListener('click',()=>{
+    document.querySelector('.fa-bars').classList.toggle('fa-rotate-90');
+    document.querySelectorAll('.social-media').forEach(e => e.classList.toggle('header-icon'))
+})
+
+//var bigMac = document.querySelector('burger').classList.toggle('turn-burger');
+
+
 
 function months(start) {
     let date1  = new Date(start);
