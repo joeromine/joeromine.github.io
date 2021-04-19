@@ -29,11 +29,10 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
-    background: #f1faee;
+    background-image: url('../images/network.jpg');
 	line-height: 1;
     height: 100%;
-    width: 50%;
-    margin: 0 25% 0 25%;
+    margin: 0 10% 0 10%;
 }
 ol, ul {
 	list-style: none;
