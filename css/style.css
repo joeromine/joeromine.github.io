@@ -1,159 +1,144 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+/*
+ * Globals
+ */
+ :root {
+  --blue: #3146be;
+  --white: #ffffff;
+  --black: #0f0c0c;
+  --grey: #a2aaaa;
 }
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+/* Links */
+a,
+a:focus,
+a:hover {
+  color: #fff;
+}
+
+/* Custom default button */
+.btn-secondary,
+.btn-secondary:hover,
+.btn-secondary:focus {
+  color: var(--blue);
+  text-shadow: none; /* Prevent inheritance from `body` */
+  background-color: var(--white);
+  border: .05rem solid var(--white);
+}
+
+
+/*
+ * Base structure
+ */
+
+html,
+body {
+  height: 100%;
+  background-color: var(--blue);
 }
 body {
-    background-image: url('../images/stars.jpg');
-	line-height: 1;
-    height: 100%;
-    margin: 0 10% 0 10%;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  color: var(--white);
+  text-align: center;
 }
 
-:root{
-    font-size: 10px;
-    
+.site-wrapper {
+  display: table;
+  width: 100%;
+  height: 100%; 
+  min-height: 100%;
+}
+.site-wrapper-inner {
+  display: table-cell;
+  vertical-align: top;
+}
+.cover-container {
+  margin-right: auto;
+  margin-left: auto;
 }
 
-.header-icon{
-    display: none;
+.inner {
+  padding: 2rem;
 }
-.burger{
+
+
+/*
+ * Header
+ */
+
+.masthead {
+  margin-bottom: 2rem;
+}
+
+.masthead-brand {
+  margin-bottom: 0;
+}
+
+.nav-masthead .nav-link {
+  padding: .25rem 0;
+  font-weight: bold;
+  color: var(--grey);
+  background-color: transparent;
+  border-bottom: .25rem solid transparent;
+}
+
+.nav-masthead .nav-link:hover,
+.nav-masthead .nav-link:focus {
+  border-bottom-color: var(--grey);
+}
+
+.nav-masthead .nav-link + .nav-link {
+  margin-left: 1rem;
+}
+
+.nav-masthead .active {
+  color: var(--white);
+  border-bottom-color: var(--white);
+}
+
+@media (min-width: 48em) {
+  .masthead-brand {
+    float: left;
+  }
+  .nav-masthead {
     float: right;
-}
-.left-border{
-    border-left: 2px solid black;
-}
-.page-padding{
-    padding: 1em;
-}
-
-.img-width{
-    width: 300px;
-    height: 300px;
-    padding: 2rem;
-    border-radius: 9rem;
-}
-header {
-    height: 5%;
-    background-color: rgb(216, 18, 18);
-    border-radius: .4rem;
-    padding: .5rem 1rem;
-    margin-bottom: 3rem;
-    font-size: 2em;
-    color: #f1faee;
-    font-family:  'Trebuchet MS', sans-serif;
-}
-
-header ul {
-    padding: 2rem 1rem;
-    margin-left: auto;
-}
-
-header ul li {
-    display: inline;
-    margin-left: .5rem;
-
-}
-header h2 {
-    padding: 2.3rem 2.3rem;
-    color: rgb(24, 22, 165);
-    font-size: 4rem;
-    font-family:  Verdana, Geneva, Tahoma, sans-serif
-}
-header a {
-color: #36342c;
-}
-header a:hover {
-    color: #f1faee;
-    }
-
-
-main {
-    font-size: 1.8em;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 2.5em;
-    color: rgb(51, 16, 180);
-
-}
-
-.main.row {
-    padding: .5rem 2rem;
-    line-height: 2.7rem;
-    margin-top: 1rem;
-    border-radius: .4rem;
-    background-color: rgba(116, 218, 21, 0.8);  /* 100% transparent */
-}
-
-main li{
-    padding: .5em;
-}
-.hidden{
-    display: none;
-}
-.connect{
-    color: rgb(24, 22, 165);
-    font-size: 2.5rem;
-    font-family:  Verdana, Geneva, Tahoma, sans-serif;
-    text-decoration: underline;
-    text-decoration-thickness: .5rem;
-}
-
-.blink {
-    animation: blinker 4s ease-in infinite;
   }
-  
-  @keyframes blinker {
-    50% {
-      opacity: 0;
-    }
-  }
-
-.row{
-    margin-left: 0;
-    margin-right: 0;
 }
-br {
-    display: block;
-    margin: 5rem 5rem;
+
+
+/*
+ * Cover
+ */
+
+.cover {
+  padding: 0 1.5rem;
+}
+.cover .btn-lg {
+  padding: .75rem 1.25rem;
+  font-weight: bold;
+}
+
+/*
+ * Affix and center
+ */
+
+@media (min-width: 40em) {
+  /* Pull out the header and footer */
+  .masthead {
+    position: fixed;
+    top: 0;
+  }
+    /* Start the vertical centering */
+  .site-wrapper-inner {
+    vertical-align: middle;
+  }
+  /* Handle the widths */
+  .masthead,
+  .cover-container {
+    width: 100%; /* Must be percentage or pixels for horizontal alignment */
+  }
+}
+
+@media (min-width: 62em) {
+  .masthead,
+  .cover-container {
+    width: 42rem;
+  }
 }
