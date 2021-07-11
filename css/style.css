@@ -7,12 +7,6 @@
   --black: #0f0c0c;
   --grey: #a2aaaa;
 }
-/* Links */
-a,
-a:focus,
-a:hover {
-  color: #fff;
-}
 
 /* Custom default button */
 .btn-secondary,
@@ -81,7 +75,8 @@ body {
 
 .nav-masthead .nav-link:hover,
 .nav-masthead .nav-link:focus {
-  border-bottom-color: var(--grey);
+  border-bottom-color: var(--white);
+  color: var(--white);
 }
 
 .nav-masthead .nav-link + .nav-link {
